@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./built/",
+    "sourceMap": true
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**"
+  ],
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "lib/libFileToExclude.d.ts",
+    "typings/browser",
+    "typings/main"
+  ],
+  "buildOnSave": true,
+  "files": [
+    "app.ts",
+    "app/controllers/blogController.ts",
+    "app/models/blogModel.ts",
+    "app/routes/blogRoute.ts",
+    "typings/browser.d.ts",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true,
+    "formatOnSave": true
+  }
+}
